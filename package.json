@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Buddha",
   "repository": "https://github.com/pusongyang/grunt-buddha-uk.git",
+  "homepage":"http://pusongyang.github.io/grunt-buddha-uk/",
   "author": {
     "name": "pusongyang",
     "email": "pusongyang@sina.cn",
