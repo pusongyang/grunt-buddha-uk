@@ -41,7 +41,7 @@ grunt.initConfig({
 Type: `String`
 Default value: `'buddha'`
 
-available values: buddha or alpaca
+available values: buddha or alpaca or teacher
 
 #### options.commentSymbol
 Type: `String`

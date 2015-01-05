@@ -22,13 +22,15 @@ module.exports = function (grunt) {
         }),
         testExistRegexMap={
           'buddha':/o8888888o/,
-          'alpaca':/神兽保佑/
+          'alpaca':/神兽保佑/,
+          'teacher':/老师保佑永无bug/
         },
         who=options.who,
         commentSymbol=options.commentSymbol,
         commentFilepathMap={
-          'buddha':'assets/buddha.txt',
-          'alpaca':'assets/alpaca.txt'
+          'buddha'  : 'assets/buddha.txt',
+          'teacher' : 'assets/teacher.txt',
+          'alpaca'  : 'assets/alpaca.txt'
         },
         commentFilePath=path.join(__dirname, commentFilepathMap[who]),
         commentContent=grunt.file.read(commentFilePath),
@@ -53,7 +55,6 @@ module.exports = function (grunt) {
         // Read file source.
         var originalFileContent=grunt.file.read(filepath),
             newFileContent=commentContent+grunt.util.normalizelf('\n')+originalFileContent;
-        console.log(newFileContent);
         if(testExistRegexMap[who].test(originalFileContent)){
           return;
         }
